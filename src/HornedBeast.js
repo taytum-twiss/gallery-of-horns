@@ -4,14 +4,14 @@ class HornedBeast extends React.Component {
     render() {
         return (
      <div>
-      <h2>Beast Title coming soon...</h2>
+      <h2>{this.props.beastObj.title}</h2>
       <img
-       src='https://via.placeholder.com/150'
-        alt='alt coming soon...' 
-        title='title coming soon...' 
+        src={this.props.beastObj.image_url}
+        alt={this.props.beastObj.description}
+        title={this.props.beastObj.title}
         style={{ width: "20%" }} 
         />
-      <p>Beast Description coming soon...</p>
+      <p>this.props.beastObj.description</p>
      </div>
 
         )
